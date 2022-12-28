@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #202124;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.NavBar__Container {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    justify-content: end;
+    height: 60px;
+    gap: 20px;
+}
+.NavBar__Button  {
+    cursor: pointer;
+}
+.NavBar__Button svg {
+    width: 24px;
+    filter: invert(.8);
+}
+.NavBar__Button:hover {
+    text-decoration: underline;
+}
+.NavBar__Button:nth-child(3):hover  {               
+    background-color: rgba(232,234,237,.08);
+    border-radius: 50%;
+}
+.NavBar__Account {
+    box-shadow: 0 1px 0 rgb(0 0 0 / 15%);
+    border-radius: 50%;
+}
+.Main {
+    height: 84vh;
+}
+.Main__Title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    min-height: 92px;
+    max-height: 290px;
+    height: calc(100% - 560px);
+}
+.Main__Logo {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+}
+.Main__Search {
+    padding: 20px;
+}
+.Search__InputLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    line-height: 20px;
+    width: 24px;
+    filter: invert(.8);
+    margin: 10px;
+
+}
+.Search__InputContainer {
+    display: flex;
+    z-index: 3;
+    height: 44px;
+    background: #202124;
+    border: 1px solid #5f6368;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: auto;
+    max-width: 584px;
+}
+.Search__Input {
+    flex-wrap: wrap;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #e8eaed;
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 16px;
+}
+.Search__VoiceMode, .Search__ByPhoto {
+    flex: 1 0 auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 0;
+    background: transparent;
+    outline: none;
+    width: 24px;
+    margin-right: 20px;
+}
+.Main__Buttons {
+    height: 70px;
+    padding-top: 18px;
+    display: block;
+    text-align: -webkit-center;
+}
+.Buttons__Button {
+    background-color: #303134;
+    border: 1px solid #303134;
+    border-radius: 4px;
+    color: #e8eaed;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 4px 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    appearance: auto;
+    text-decoration: none;
+}
+.Empty {
+    
+}
+.footer1 {
+    background: #171717;
+    padding:15px 30px;
+    border-bottom:1px solid #3c4043;
+    font-size:15px;
+    color:#9aa0a6;
+    position: relative;
+}
+.footer2 {
+    background: #171717;
+    padding:15px 30px;
+    border-bottom:1px solid #3c4043;
+    font-size:15px;
+    color:#9aa0a6;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer__button {
+    padding: 15px;
+    white-space: nowrap;
+}
+.footer__button:hover {
+    text-decoration: underline;
+}
